@@ -1,0 +1,7 @@
+// This is the entry point of the program, where the main function begins
+fun main(){
+    var cartTotal = 0 //This line declares a mutable variable named cartTotal and initializes it with the value 0.
+    println("The total is:$cartTotal")
+    cartTotal = 20
+    print("The total cost of items in the cart is now $cartTotal")
+}
