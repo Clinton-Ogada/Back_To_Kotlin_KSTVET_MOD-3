@@ -1,0 +1,14 @@
+fun main(){
+ val greeting = birthDayMessage()
+ println(greeting)
+  
+}
+fun birthDayMessage():String{
+  val nameGreeting = "Happy Birthday love"
+   val ageGreeting = "You are now 5 years old"
+   
+    val rank = 2
+  return ("$nameGreeting\n$ageGreeting\n$rank")
+ // return (rank)
+    
+}
