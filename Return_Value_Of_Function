@@ -1,6 +1,6 @@
 fun main(){
- val greeting = birthDayMessage()
- println(greeting)
+ //val greeting = birthDayMessage()
+ println(birthDayMessage())
   
 }
 fun birthDayMessage():String{
