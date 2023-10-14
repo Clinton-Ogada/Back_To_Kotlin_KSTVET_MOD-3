@@ -1,0 +1,32 @@
+fun main() {
+    // Create a mutable list to store the user's favorite fruits.
+    val fruits = mutableListOf<String>()
+
+    // Display a message asking the user to enter the names of their favorite fruits.
+    println("Enter the names of your favorite fruits (one per line, type 'done' to finish):")
+
+    var userInput: String?
+    do {
+        // Read the user's input and store it in the 'userInput' variable.
+        userInput = readLine()
+
+        // Check if the user's input is not "done."
+        if (userInput != "done") {
+            // Add the user's input to the 'fruits' list. If 'userInput' is null, use an empty string.
+            fruits.add(userInput ?: "")
+        }
+    } while (userInput != "done")
+
+    // Check if the 'fruits' list is not empty.
+    if (fruits.isNotEmpty()) {
+        // If there are fruits in the list, display a message indicating the user's favorite fruits.
+        println("Your favorite fruits:")
+        for (fruit in fruits) {
+            // Print each fruit using string interpolation.
+            println("I like $fruit")
+        }
+    } else {
+        // If the 'fruits' list is empty, inform the user that they didn't enter any fruits.
+        println("You didn't enter any fruits.")
+    }
+}
