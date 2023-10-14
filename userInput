@@ -1,0 +1,10 @@
+// User Input
+
+fun main() {
+    // Prompt the user to enter their name and store the input in the 'name' variable.
+    print("Enter your name: ")
+    val name = readLine()
+
+    // Display a personalized greeting using the entered name.
+    println("Hey $name!,\n You are an amazing friend and brother to me. God bless you")
+}
