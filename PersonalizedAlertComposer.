@@ -1,0 +1,24 @@
+fun displayAlertMessage(operatingSystem: String, emailId: String): String {
+    // Define a function called displayAlertMessage that takes two string parameters, operatingSystem and emailId.
+    
+    // Create a new variable called alertMessage and assign it a string value.
+    // This string is a customized alert message with placeholders ($operatingSystem and $emailId) for the input values.
+    val alertMessage = "There's a new sign-in request on $operatingSystem for your Google Account $emailId"
+    
+    // Return the alertMessage string.
+   return alertMessage
+}
+
+fun main() {
+    // Declare and initialize two variables, operatingSystem and emailId.
+	val operatingSystem = "Chrome OS"
+    val emailId = "Klint@gmail.com"
+    
+    // Call the displayAlertMessage function with operatingSystem and emailId as arguments
+    // and print the result to the console.
+    println(displayAlertMessage(operatingSystem, emailId))
+}
+
+// The program starts by calling the main function. In the main function, it sets values for operatingSystem and emailId, 
+// then calls the displayAlertMessage function to create a customized alert message using these values. 
+// The resulting message is printed to the console.
